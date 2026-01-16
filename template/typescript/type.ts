@@ -1,7 +1,7 @@
 import type { ResourceBase } from "@/types/ResourceBase";
 
 type {{{name}}} = ResourceBase & {
-  '@id'?: string;
+  readonly id: string;
   {{#each fields}}
     {{#if readonly}} readonly{{/if}} {{#unless (isIdentifier name)}}"{{/unless}}
       {{~ name ~}}
